@@ -3,6 +3,7 @@ body {
   color: #222;
   background: #fff;
   line-height: 1.5;
+  margin: 20px;
 }
 :root {
   --purple: #6744a5;
@@ -422,6 +423,420 @@ a { text-decoration: none; color: inherit; }
   .about-title { font-size: 28px; }
 }
 
+/* OUR PRODUCTS SECTION */
+.header-product-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.view-btn-2 {
+    background:  #5e00a6;
+    width: fit-content;
+    height: 35px;
+    padding: 7px 20px;
+    color: white;
+    border-radius: 20px;
+    font-size: 1rem;
+  }
+
+  .header-product-2 h2{
+    font-size: 2.5rem;
+    margin-top: 0;
+  }
+
+  .highlight-2 {
+    color: #5e00a6;
+  }
+
+
+.product-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.product-card-2 {
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  padding: 20px;
+  position: relative;
+ flex-grow: 1;
+}
+
+.product-card-2 .description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-container-2 {
+width: 50%;
+height: 50%;
+}
+
+.discount-2 {
+  background:  #fe91e8;
+  color: #2b2a2a;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 20px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.image-container-2 img {
+  width: 100%;
+  height: 200px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.timer-2 {
+  background:  #5e00a6;
+  color:   #fe91e8;
+  padding: 5px 5px;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  position: absolute;
+  top: 200px;
+}
+
+.category-2 {
+  color: #777;
+  font-size: 14px;
+}
+
+.price-2 {
+  margin: 8px 0;
+  font-size: 1.2rem;
+}
+
+.price-2 .current {
+  color: #000;
+  font-weight: 600;
+  
+}
+
+.price-2 .old {
+  color: #9D9D9D;
+  text-decoration: line-through;
+}
+
+.rating-2 {
+  font-weight: bolder;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-product-2 {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+}
+
+/* Part 2 */
+
+.holiday-sale{
+  max-width: 1200px;
+  /* margin-top: 50px;
+  margin-bottom: 10px; */
+  margin: 80px auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
+  
+}
+
+.sale-content {
+  background: #fff;
+  border-radius: 20px;
+  padding: 50px 40px;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.08);
+  max-width: 450px;
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.sale-content::before,
+.sale-content::after {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 100px;
+  background: url('Images/pngtree-crocus-flower-spring-blooming-purple-saffron-with-leaves-png-image_9206046.png') no-repeat center/contain;
+  background-position: center;
+}
+
+.sale-content::before {
+  top: -30px;
+  left: -30px;
+}
+
+.sale-content::after {
+  bottom: -30px;
+  right: -30px;
+}
+
+.image-frame-right, .image-frame-left{
+  width: 240px;
+ height: 480px;
+ border-radius: 20px;
+ overflow: hidden;
+
+}
+
+.image-frame-right img, .image-frame-left img{
+ width: 100%;
+  height: 100%;
+ object-fit: cover;
+
+}
+
+.holiday-timer {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.sales-btn{
+  background: #5e00a6;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 500;
+
+}
+
+
+.holiday-timer h3 {
+  color: #111;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.holiday-timer span {
+  color: #777;
+  font-size: 1.5rem;
+}
+ 
+.holiday-timer .colon {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: #000;
+}
+
+/* New Arrival Section starts here */
+.new-arrival {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f9f9f9;
+  font-family: "Poppins", sans-serif;
+}
+
+.new-arrival h4 {
+  color: #777;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.new-arrival h2 {
+  font-size: 2rem;
+  color: #222;
+}
+
+.new-arrival h2 span {
+  color:  #5e00a6; /* purple accent */
+}
+
+.arrival-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.product-card-3 {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  overflow: hidden;
+  position: relative;
+  padding: 20px;
+  width: 100%;
+  max-width: 350px;
+  transition: transform 0.3s ease;
+}
+
+.product-card-3:hover {
+  transform: translateY(-5px);
+}
+
+.discount-badge-3 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background:  #fe91e8;
+  color: #242424;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 30px;
+}
+
+.product-image-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.product-image-3 img {
+  width: 100%;
+  max-width: 180px;
+  border-radius: 10px;
+}
+
+.product-info-3 {
+  text-align: left;
+}
+
+.top-row-3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.category-3 {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.rating-3 {
+  color:  #fe91e8;
+  font-weight: bold;
+}
+
+.h4-tag {
+  font-size: 1.2rem;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.price-3 {
+  margin-bottom: 10px;
+}
+
+.price-3 .new {
+  font-weight: bold;
+  color: #000;
+  margin-right: 10px;
+}
+
+.price-3 .old {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.desc-3 {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.shop-now-3 {
+  text-decoration: none;
+  color: #7b3fe4;
+  font-weight: 600;
+}
+
+.shop-now-3:hover {
+  text-decoration: underline;
+}
+
+
+/* Weekly Deal Banner */
+.weekly-deal {
+  background: #5e00a6;
+  border-radius: 20px;
+  color: #fff;
+  padding-left: 30px;
+  padding-bottom: 1px;
+  margin: 60px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.weekly-deal .deal-content {
+  max-width: 50%;
+  z-index: 2;
+}
+
+.weekly-deal h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.weekly-highlight-2{
+   color:  #fe91e8;
+}
+
+#weekly-beautiful{
+    color:  #fe91e8;
+}
+.weekly-deal span {
+  color: #FFD9F9;
+}
+
+.weekly-deal .desc {
+  color: #eee;
+  margin-bottom: 25px;
+}
+.deal-paragraph{
+    color: #fe91e8 ;
+}
+
+.weekly-deal .btn {
+  background: #fe91e8;
+  color: black;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: 500;
+  text-decoration: none;
+padding: 10px;
+}
+
+.weekly-deal .deal-image {
+  /* position: absolute;
+  right: 40px;
+  bottom: 0; */
+  object-fit: contain;
+  object-position: left;
+  padding-left: -1000px;
+}
+
+.weekly-deal .deal-image img {
+  width: 100%;
+  /* height: auto; */
+
+}
+
 /* DEAL SECTION */
 /* === GLOBAL RESET === */
 * {
@@ -471,7 +886,7 @@ body {
 }
 
 .section-title span {
-  color: #7b2ff7;
+  color: #5e00a6;
 }
 
 .right-header {
@@ -525,13 +940,13 @@ body {
   text-align: center;
 }
 
-.products-grid {
+.products-grid-4 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
 }
 
-.product-card {
+.product-card-4 {
   background: #fafafa;
   border-radius: 16px;
   padding: 15px;
@@ -541,12 +956,12 @@ body {
   transition: all 0.3s ease;
 }
 
-.product-card:hover {
+.product-card-4:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.discount-badge {
+.discount-badge-4 {
   position: absolute;
   top: 10px;
   left: 10px;
@@ -558,15 +973,13 @@ body {
   border-radius: 10px;
 }
 
-.discount-badge.pink {
-  background: #ff63b3;
+.discount-badge-4{
+  background: #fe91e8;
+  color: rgb(47, 47, 47);
 }
 
-.discount-badge.orange {
-  background: #ff9d44;
-}
 
-.product-card img {
+.product-card-4 img {
   width: 100%;
   height: 180px;
   border-radius: 12px;
@@ -574,25 +987,25 @@ body {
   margin-bottom: 12px;
 }
 
-.category {
+.category-4 {
   font-size: 13px;
   color: #888;
   margin-bottom: 4px;
 }
 
-.rating {
+.rating-4 {
   color: #ffb400;
   font-size: 14px;
   margin-bottom: 6px;
 }
 
-.product-card h3 {
+.product-card-4 h3 {
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 6px;
 }
 
-.price {
+.price-4 {
   font-size: 15px;
   display: flex;
   justify-content: center;
@@ -600,12 +1013,12 @@ body {
   align-items: baseline;
 }
 
-.current {
+.price-4.current {
   color: #000;
   font-weight: 700;
 }
 
-.old {
+.price-4.old {
   text-decoration: line-through;
   color: #999;
 }
@@ -642,7 +1055,7 @@ body {
 }
 
 .clients-text {
-  background: linear-gradient(90deg, #7b2ff7, #b74bff);
+  background: linear-gradient(90deg, #5e00a6);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
