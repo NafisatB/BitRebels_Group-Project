@@ -1,0 +1,424 @@
+
+body{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.view-btn {
+    background: #5D00A6;
+    width: fit-content;
+    height: 35px;
+    padding: 7px 20px;
+    color: white;
+    border-radius: 20px;
+    font-size: 1rem;
+  }
+
+  .header h2{
+    font-size: 2.5rem;
+    margin-top: 0;
+  }
+
+  .highlight {
+    color: #570D94;
+  }
+
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.product-card {
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  padding: 20px;
+  position: relative;
+ flex-grow: 1;
+}
+
+.product-card .description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-container {
+width: 50%;
+height: 50%;
+}
+
+.discount {
+  background: #FE91ED;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 20px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 200px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.timer {
+  background: #5E00A5;
+  color: #C769D9;
+  padding: 5px 5px;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  position: absolute;
+  top: 200px;
+}
+
+.category {
+  color: #777;
+  font-size: 14px;
+}
+
+.price {
+  margin: 8px 0;
+  font-size: 1.2rem;
+}
+
+.price .current {
+  color: #000;
+  font-weight: 600;
+  
+}
+
+.price .old {
+  color: #9D9D9D;
+  text-decoration: line-through;
+}
+
+.rating {
+  font-weight: bolder;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+}
+
+/* Part 2 */
+
+.holiday-sale{
+  max-width: 1200px;
+  /* margin-top: 50px;
+  margin-bottom: 10px; */
+  margin: 80px auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
+  
+}
+
+.sale-content {
+  background: #fff;
+  border-radius: 20px;
+  padding: 50px 40px;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.08);
+  max-width: 450px;
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.sale-content::before,
+.sale-content::after {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 100px;
+  background: url('Images/pngtree-crocus-flower-spring-blooming-purple-saffron-with-leaves-png-image_9206046.png') no-repeat center/contain;
+  background-position: center;
+}
+
+.sale-content::before {
+  top: -30px;
+  left: -30px;
+}
+
+.sale-content::after {
+  bottom: -30px;
+  right: -30px;
+}
+
+.image-frame-right, .image-frame-left{
+  width: 240px;
+ height: 480px;
+ border-radius: 20px;
+ overflow: hidden;
+
+}
+
+.image-frame-right img, .image-frame-left img{
+ width: 100%;
+  height: 100%;
+ object-fit: cover;
+
+}
+
+.holiday-timer {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.sales-btn{
+  background: #6001A5;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 500;
+
+}
+
+
+.holiday-timer h3 {
+  color: #111;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.holiday-timer span {
+  color: #777;
+  font-size: 1.5rem;
+}
+ 
+.holiday-timer .colon {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: #000;
+}
+
+/* New Arrival Section starts here */
+.new-arrival {
+  text-align: center;
+  padding: 60px 10%;
+}
+
+.new-arrival h4 {
+  color: black;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.new-arrival h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.new-arrival span {
+  color: #4C0993;
+}
+
+/* Arrival Grid */
+.arrival-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 25px;
+}
+
+.product-box {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  padding: 80px;
+  width: 260px;
+  position: relative;
+  text-align: left;
+}
+
+.discount {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #f8d8ff;
+  color: #7A3AFF;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.category {
+  color: #999;
+  font-size: 13px;
+}
+
+.product-info h3 {
+  font-size: 18px;
+  margin: 5px 0;
+  color: #333;
+}
+
+.price {
+  margin: 8px 0;
+}
+
+.price .new {
+  font-weight: 600;
+  color: #111;
+}
+
+.price .old {
+  text-decoration: line-through;
+  color: #aaa;
+  margin-left: 8px;
+}
+
+.desc {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.shop-now {
+  color: #5E00A6;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* Weekly Deal Banner */
+.weekly-deal {
+  background: #5E00A6;
+  border-radius: 20px;
+  color: #fff;
+  padding-left: 30px;
+  padding-bottom: 1px;
+  margin: 60px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.weekly-deal .deal-content {
+  max-width: 50%;
+  z-index: 2;
+}
+
+.weekly-deal h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.weekly-highlight{
+   color: #D465DA;
+}
+
+.weekly-deal span {
+  color: #FFD9F9;
+}
+
+.weekly-deal .desc {
+  color: #eee;
+  margin-bottom: 25px;
+}
+
+.weekly-deal .tag {
+  color: #D465DA;
+  margin-top: 25px;
+}
+
+.weekly-deal .btn {
+  background: #FF92E9;
+  color: black;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: 500;
+  text-decoration: none;
+padding: 10px;
+}
+
+.weekly-deal .deal-image {
+  /* position: absolute;
+  right: 40px;
+  bottom: 0; */
+  object-fit: contain;
+  object-position: left;
+  padding-left: -1000px;
+}
+
+.weekly-deal .deal-image img {
+  width: 100%;
+  /* height: auto; */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
