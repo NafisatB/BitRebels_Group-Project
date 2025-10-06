@@ -1,0 +1,145 @@
+/* === GLOBAL === */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fafafa;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* === TESTIMONIAL SECTION === */
+.testimonials {
+  text-align: center;
+  padding: 80px 20px;
+  background: #f9f9f9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* === HEADER === */
+.testimonial-header h2 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0 0 50px;
+}
+
+.what-text {
+  color: #000;
+}
+
+/* ✅ Fixed gradient text */
+.clients-text {
+  background: linear-gradient(90deg, #7b2ff7, #b74bff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+/* === TESTIMONIAL CARDS === */
+.testimonial-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 40px;
+  flex-wrap: nowrap; /* ✅ keep side by side */
+}
+
+.testimonial-card {
+  flex: 1;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  padding: 30px;
+  text-align: left;
+  position: relative;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-6px);
+}
+
+/* === RATING === */
+.testimonial-rating {
+  color: #ffb400;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.testimonial-rating span {
+  color: #000;
+  margin-left: 6px;
+}
+
+/* === CONTENT === */
+.testimonial-card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.testimonial-text {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.divider {
+  height: 1px;
+  background: #eee;
+  margin-bottom: 20px;
+}
+
+/* === AUTHOR === */
+.testimonial-footer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.author-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-author {
+  font-weight: 600;
+  color: #000;
+  font-size: 16px;
+}
+
+.testimonial-role {
+  color: #888;
+  font-size: 14px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 900px) {
+  .testimonial-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-card {
+    width: 100%;
+    max-width: 420px;
+  }
+}
