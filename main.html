@@ -5,93 +5,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BitRebels Flower Shop Website</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="/main.css">
 </head>
 <body>
     <div class="top-bar">
-    <div class="container top-bar-inner">
-      <p class="call-info">Call Us : <span>+123-456-789</span></p>
-      <p class="signup-text">
-        Sign up and <strong>GET 20% OFF</strong> for your first order. 
+      <span>Call Us : <b>+123-456-789</b></span>
+       <span>Sign up and <strong>GET 20% OFF</strong> for your first order. 
         <a href="https://womentechsters.org/">Sign up now</a>
-      </p>
+        </span> 
       <div class="socials">
-        <a href="https://womentechsters.org/"><img src="/images/facebook_2.png" alt="facebook"></a>
-        <a href="https://womentechsters.org/"><img src="/images/twitter.png" alt="twitter"></a>
-        <a href="https://womentechsters.org/"><img src="/images/pinterest.png" alt="pinterest"></a>
-        <a href="https://womentechsters.org/"><img src="/images/instagram.png" alt="instagram"></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+            <a href="https://pinterest.com" target="_blank" rel="noopener"><i class="fab fa-pinterest"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
       </div>
-    </div>
   </div>
 
   
   <div class="nav-bar">
-    <div class="container nav-inner">
       
       <div class="logo">
-        <img src="/images/flower.png" alt="Flower Shop Logo">
-        <span>Flower <strong>Shop</strong></span>
+        <img src="/images/flower-logo.png" alt="Flower Shop Logo">
+        <span>Flower Shop <span id="dot">.</span></span>
       </div>
 
       
-      <nav class="nav-links">
-        <a href="https://womentechsters.org/" class="active">Home</a>
-        <a href="https://womentechsters.org/">Shop</a>
-        <a href="https://womentechsters.org/">Occasions</a>
-        <a href="https://womentechsters.org/">About Us</a>
-        <a href="https://womentechsters.org/">Contact Us</a>
-        <a href="https://womentechsters.org/">Blogs</a>
-      </nav>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/shop">Shop</a></li>
+            <li><a href="/occasions">Occasions</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="contact">Contact Us</a></li>
+            <li><a href="/blogs">Blogs</a></li>
+        </ul>
 
       
       <div class="nav-icons">
-        <img src="/images/magnifying-glass.png" alt="search">
-        <img src="/images/heart.png" alt="wishlist">
-        <img src="/images/bag.png" alt="cart">
-        <img src="/images/people.png" alt="user">
+        <a href="#"> 
+          <img src="/images/magnifying-glass.png" alt="search">
+        </a>
+        <a href="#">
+          <img src="/images/heart.png" alt="wishlist">
+        </a>
+        <a href="#"> 
+           <img src="/images/bag.png" alt="cart">
+        </a>
+        <a href="#"> 
+          <img src="/images/people.png" alt="user"> 
+        </a>
       </div>
     </div>
-  </div>
-</header>
+ 
 
-  <section class="hero">
-    <div class="container hero-grid">
-
-      <div class="hero-left">
-        <div class="badge-small">Your Trusted Online Flower Shop</div>
-        <h1 class="hero-title">The Ultimate <span class="accent">Flower <br>Shopping Destination</span></h1>
-        <p class="hero-sub">Freshly arranged bouquets and same-day delivery. Handpicked flowers delivered with care.</p>
-        <div class="hero-actions">
-          <button class="btn primary" id="shopNow">Shop Now →</button>
-          <a class="view-products" href="#">View All Products</a>
+    <main class="main-container">
+   <section class="hero-section">
+     <div class="hero-text">
+        <div class="badge-small"> 
+          <span>
+            <img src="/images/rose_new.png" alt="rose icon">
+            Your Trusted Online Flower Shop
+           </span>
         </div>
+
+        <h1 class="hero-title">The Ultimate <span>Flower Shopping Destination</span></h1>
+
+        <p class="hero-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nisi quaerat sequi, explicabo optio nobis?.</p>
+
+        <div class="hero-actions">
+           <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+          <a href="/products">View All Products</a>
+        </div>
+
         <div class="hero-ratings">
           <div class="avatars">
             <img src="/images/person1.jpg" alt="customer 1">
             <img src="/images/person2.jpg" alt="customer 2">
             <img src="images/person3.jpg" alt="customer 3">
             <img src="/images/person 4.jpg" alt="customer4">
+
+            <div class="more">+</div>
           </div>
-          <div class="rating-text">⭐ 4.9+ Ratings — Trusted by 95k+ Customers</div>
+
+          <div class="hero-rating-text">
+            <span class="rating-text">4.9+ Ratings</span> 
+            <span class="subtext">Trusted by 95k+ Customers</span>
+          </div>
         </div>
       </div>
       
-      <div class="hero-right">
-        <div class="image-wrap">
-          <img src="/images/lady.png" alt="Bouquet" class="hero-img">
-          <div class="pill pill-delivery">🚚 Fast Delivery</div>
-          <div class="pill pill-secure">🔒 Secure Payment</div>
-          <div class="circle-cta">+</div>
-        </div>
-      </div>
-    </div>
+    
+        <div class="hero-img">
+                <img src="/images/lady.png" alt="hero image" class="main-img">
+
+                <span class="hero-tag tag-delivery">
+                    <i class="fa-solid fa-truck"></i>
+                    Fast Delivery
+                </span>
+
+                <span class="hero-tag tag-payment">
+                    <i class="fa-solid fa-wallet"></i>
+                    Secure Payment
+                </span>
+
+                <img src="/images/hero-logo.png" alt="shop now logo" class="shop-now">
+            </div>
   </section>
 
-  
+  <section class="occasions-section">
   <section class="occasions">
     <div class="container">
         <div class="occasions-header"><p>Occasions</p></div>
@@ -108,29 +140,29 @@
   </section>
 
   
-  <section class="offers">
+  <section class="offers-section">
     <div class="container offers-grid">
       <div class="offer-card light">
         <div class="offer-text">
           <span class="offer-badge">Flat 20% Discount</span>
           <h3>Lovely Fresh Bouquets</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <button class="btn primary">Shop Now →</button>
+          <button class="btn-primary">Shop Now →</button>
         </div>
         <div class="offer-img"><img src="/images/lady2.png" alt="Bouquet Offer"></div>
       </div>
       <div class="offer-card dark">
         <div class="offer-text">
-          <span class="offer-badge">Flat 25% Discount</span>
+          <span class="offer-badge" id="offer-badge25">Flat 25% Discount</span>
           <h3>Pure Bloom Collection</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <button class="btn primary" id="shop2">Shop Now →</button>
+          <p class="offer-badge-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <button class="btn-primary" id="shop2">Shop Now →</button>
         </div>
         <div class="offer-img"><img src="/images/lady3.png" alt="Bloom Collection"></div>
       </div>
     </div>
   </section>
-
+</section>
     
 <section class="about">
   <div class="container about-grid">
@@ -185,6 +217,7 @@
 </section>
 
 <!-- OUR PRODUCTS -->
+ <section class="product-section">
  <article class="top-products">
     <div class="header-product-2">
       <div>
@@ -317,6 +350,7 @@
         </div>
 </div>
 </div>
+</section>
 
 <footer class="insta-footer">
 
@@ -375,11 +409,11 @@
 </footer>
 
 
-<!-- Part 3 starts here -->
+<!-- NEW ARRIVAL SECTION -->
+
  <section class="new-arrival">
   <h4>New Arrival</h4>
   <h2><span>New Arrival</span> Products</h2>
-
   <div class="arrival-grid">
     <!-- Product 1 -->
     <div class="product-card-3">
@@ -419,7 +453,7 @@
           <span class="old">$60.00</span>
         </div>
         <p class="desc-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-        <a href="#" class="shop-now">Shop Now →</a>
+        <a href="#" class="shop-now-3">Shop Now →</a>
       </div>
     </div>
   </div>
@@ -912,7 +946,7 @@
     </div>
   </footer>
 </section>
-
+</main>
 <!-- Newsletter -->
  <section class="newsletter-section">
     <div class="news-header">
